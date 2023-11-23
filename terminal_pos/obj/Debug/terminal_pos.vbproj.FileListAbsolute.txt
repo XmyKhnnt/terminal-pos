@@ -33,3 +33,16 @@ E:\VB_projects\terminal_pos-20231116T004052Z-001\terminal_pos\terminal_pos\bin\D
 E:\VB_projects\terminal_pos-20231116T004052Z-001\terminal_pos\terminal_pos\obj\Debug\terminal_pos.vbproj.AssemblyReference.cache
 E:\VB_projects\terminal_pos-20231116T004052Z-001\terminal_pos\terminal_pos\obj\Debug\terminal_pos.vbproj.CoreCompileInputs.cache
 E:\VB_projects\terminal_pos-20231116T004052Z-001\terminal_pos\terminal_pos\obj\Debug\terminal_pos.vbproj.CopyComplete
+C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\bin\Debug\terminal_pos.exe.config
+C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\obj\Debug\terminal_pos.exe
+C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\obj\Debug\terminal_pos.xml
+C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\obj\Debug\terminal_pos.pdb
+C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\bin\Debug\terminal_pos.exe
+C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\bin\Debug\terminal_pos.pdb
+C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\bin\Debug\terminal_pos.xml
+C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\obj\Debug\terminal_pos.frmCashReceived.resources
+C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\obj\Debug\terminal_pos.frmChangeQty.resources
+C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\obj\Debug\terminal_pos.frmMainForm.resources
+C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\obj\Debug\terminal_pos.frmItems.resources
+C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\obj\Debug\terminal_pos.Resources.resources
+C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\obj\Debug\terminal_pos.vbproj.GenerateResource.Cache

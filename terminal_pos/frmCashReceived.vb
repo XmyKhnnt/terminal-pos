@@ -79,6 +79,19 @@ Public Class frmCashReceived
             cmd.ExecuteNonQuery()
         Next
 
+
+        For cItems = 0 To frmMainForm.ListView1.Items.Count - 1
+
+            sql = "UPDATE items SET qty = qty - " & frmMainForm.ListView1.Items(cItems).SubItems(3).Text & " WHERE itemid = " & frmMainForm.ListView1.Items(cItems).Text
+            cmd = New MySqlCommand(sql, cn)
+            cmd.ExecuteNonQuery()
+
+        Next
+
+
+
+
+
         cmd.Dispose()
         cn.Close()
 
