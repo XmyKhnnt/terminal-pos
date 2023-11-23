@@ -2,12 +2,21 @@
 
 Public Class frmCashReceived
 
+    Private Sub frmCashReceived_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+
+        If e.KeyCode = Keys.Enter Then
+            post_sales()
+
+        End If
+
+    End Sub
+
 
 
 
 
     Private Sub frmCashReceived_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        KeyPreview = True
 
 
 
@@ -19,27 +28,7 @@ Public Class frmCashReceived
 
     Private Sub save_btn_Click(sender As Object, e As EventArgs) Handles save_btn.Click
 
-        If posted_status Then
-
-            MsgBox("Transaction Already Posted")
-            Me.Dispose()
-
-
-        Else
-
-            If Convert.ToDecimal(textCash.Text) < TotalAmount Then
-                MsgBox("Error: Amount received is less than the total rendered!", vbInformation)
-            Else
-                frmMainForm.cash_received.Text = textCash.Text
-                frmMainForm.overall_total.Text = Convert.ToDecimal(frmMainForm.cash_received.Text) - TotalAmount
-
-                saveTransaction()
-                frmMainForm.ChangePostedStatus()
-                frmMainForm.UpdateSatus()
-
-                Me.Dispose()
-            End If
-        End If
+        post_sales()
 
     End Sub
 
@@ -89,12 +78,34 @@ Public Class frmCashReceived
         Next
 
 
-
-
-
         cmd.Dispose()
         cn.Close()
 
         MsgBox("Transaction Posted!", MsgBoxStyle.Information, "Posted")
+
+    End Sub
+
+    Private Sub post_sales()
+        If posted_status Then
+
+            MsgBox("Transaction Already Posted")
+            Me.Dispose()
+
+
+        Else
+
+            If Convert.ToDecimal(textCash.Text) < TotalAmount Then
+                MsgBox("Error: Amount received is less than the total rendered!", vbInformation)
+            Else
+                frmMainForm.cash_received.Text = textCash.Text
+                frmMainForm.overall_total.Text = Convert.ToDecimal(frmMainForm.cash_received.Text) - TotalAmount
+
+                saveTransaction()
+                frmMainForm.ChangePostedStatus()
+                frmMainForm.UpdateSatus()
+
+                Me.Dispose()
+            End If
+        End If
     End Sub
 End Class

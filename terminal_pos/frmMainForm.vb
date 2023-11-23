@@ -66,7 +66,7 @@
     End Sub
 
     Public Sub ResetGlobalValues()
-        chngQty = 0
+        chngQty = 1
         TotalAmount = 0
         total_amount_reveived = 0
     End Sub
