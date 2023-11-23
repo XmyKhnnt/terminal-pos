@@ -46,3 +46,4 @@ C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\obj\Debug\termina
 C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\obj\Debug\terminal_pos.frmItems.resources
 C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\obj\Debug\terminal_pos.Resources.resources
 C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\obj\Debug\terminal_pos.vbproj.GenerateResource.Cache
+C:\Users\install\Documents\DahayPOst\terminal-pos\terminal_pos\obj\Debug\terminal_pos.frmSalesHistory.resources

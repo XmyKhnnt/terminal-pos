@@ -99,6 +99,12 @@
     <Compile Include="frmItems.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmSalesHistory.Designer.vb">
+      <DependentUpon>frmSalesHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalesHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmItems.resx">
       <DependentUpon>frmItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalesHistory.resx">
+      <DependentUpon>frmSalesHistory.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

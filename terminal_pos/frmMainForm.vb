@@ -11,6 +11,11 @@
 
         ElseIf e.KeyCode = Keys.F2 Then
             ResetTransactrionForm()
+
+        ElseIf e.KeyCode = Keys.F12 Then
+
+            frmSalesHistory.ShowDialog()
+
         End If
 
     End Sub
@@ -18,7 +23,7 @@
 
     Private Sub frmMainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         KeyPreview = True
-        Label1.Text = "[F2]-New Transaction | [F4]-Search Item | [F8]-Change Qty [F10]- Add Payment  "
+        Label1.Text = "[F2]-New Transaction | [F4]-Search Item | [F8]-Change Qty [F10]- Add Payment  [F12] - Sales History"
         chngQty = 1
 
 
