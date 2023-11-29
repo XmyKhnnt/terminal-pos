@@ -22,7 +22,8 @@ Module Module1
     Public uid As Integer = 1
 
     Public Sub dbconn()
-        cn.ConnectionString = "server=172.16.11.195;username=dahay;password=12345678;database=dahay;port=3306;"
+        'cn.ConnectionString = "server=172.16.11.195;username=dahay;password=12345678;database=dahay;port=3306;"
+        cn.ConnectionString = "server=localhost;username=root;password=root;database=terminal_pos;port=3306;"
         cn.Open()
     End Sub
 

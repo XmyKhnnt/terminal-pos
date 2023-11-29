@@ -6,6 +6,8 @@ Public Class frmCashReceived
 
         If e.KeyCode = Keys.Enter Then
             post_sales()
+        ElseIf e.KeyCode = Keys.Escape Then
+            Me.Dispose()
 
         End If
 
@@ -86,15 +88,14 @@ Public Class frmCashReceived
     End Sub
 
     Private Sub post_sales()
-        If posted_status Then
 
+        If posted_status Then
             MsgBox("Transaction Already Posted")
             Me.Dispose()
-
-
         Else
-
-            If Convert.ToDecimal(textCash.Text) < TotalAmount Then
+            If String.IsNullOrWhiteSpace(textCash.Text) Then ' Check if the text is empty or contains only whitespace
+                MsgBox("Error: Amount received is empty!", vbInformation)
+            ElseIf Convert.ToDecimal(textCash.Text) < TotalAmount Then
                 MsgBox("Error: Amount received is less than the total rendered!", vbInformation)
             Else
                 frmMainForm.cash_received.Text = textCash.Text
@@ -108,4 +109,5 @@ Public Class frmCashReceived
             End If
         End If
     End Sub
+
 End Class
